@@ -1,3 +1,3 @@
 # Tradutor-de-determinismo
 ### Unfinished
-### Hosted at https://github.com/WCDiasLima/Tradutor-de-determinismo
+### Hosted at https://wcdiaslima.github.io/Tradutor-de-determinismo
