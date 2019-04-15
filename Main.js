@@ -21,12 +21,10 @@ let entrada, saida, botao;
 let AFN, AFD;
 
 function setup() {
-	entrada = createInput()
-		.class("Caixa");
-	saida = createInput()
-		.class("Caixa");
-	botao = createButton("Traduzir")
-		.mousePressed(traduzir);
+	
+       entrada = document.getElementById('nde');
+       saida = document.getElementById('det');
+
 	AFD = {
 		"alfabeto": undefined,
 		"qtdEstados": undefined,
@@ -34,10 +32,11 @@ function setup() {
 		"estadosFinais": undefined,
 		"delta": undefined
 	}
+	traduzir();
 }
 
 function traduzir() {
-	AFN = JSON.parse(entrada.value());
+	AFN = JSON.parse(entrada.value);
 	AFD.alfabeto = AFN.alfabeto;
 	AFD.estadosFinais = [];
 	AFD.delta = [];
@@ -68,7 +67,7 @@ function traduzir() {
 		}
 	}
 	AFD.qtdEstados = AFD.delta.length;
-	saida.value(JSON.stringify(AFD, null, "\t"));
+	saida.value = JSON.stringify(AFD, null, "\t");
 }
 
 Set.prototype.igual = function (a) { //Igualdade entre conjuntos
