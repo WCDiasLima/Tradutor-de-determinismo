@@ -15,5 +15,12 @@ This file is part of Tradutor de Determinismo (TdD).
 	</head>
 	<body>
 		<script src="Main.js"></script>
+	        <form name="caixa" id = "caixas" >
+		   <h1>  Autônomo Não Deterministico:</h1>
+	           <textarea name="bloco" id="nde"></textarea>
+		   <h2>Autônomo Deterministico Resultante:</h2> 
+                   <textarea id="det" readonly></textarea>					          
+               </form>
+	       <button id="but" type="submit" onclick = "return setup()">TRADUZIR</button>
 	</body>
 </html>
