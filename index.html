@@ -7,20 +7,20 @@ This file is part of Tradutor de Determinismo (TdD).
 <html lang = "pt">
 	<head>
 		<title>TdD - por JE e WC</title>
-		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.sound.min.js"></script>
+		<meta charset = "utf-8">
+		<link href = "style.css" rel = "stylesheet" type = "text/css">
+		<script src = "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
+		<script src = "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
+		<script src = "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.sound.min.js"></script>
 	</head>
 	<body>
-		<script src="Main.js"></script>
-	        <form name="caixa" id = "caixas" >
-		   <h1>  Autônomo Não Deterministico:</h1>
-	           <textarea name="bloco" id="nde"></textarea>
-		   <h2>Autônomo Deterministico Resultante:</h2> 
-                   <textarea id="det" readonly></textarea>					          
-               </form>
-	       <button id="but" type="submit" onclick = "return traduzir()">TRADUZIR</button>
+		<script src = "Main.js"></script>
+		<form id = "caixas" name = "caixa">
+			<h1> Autônomo Não Deterministico:</h1>
+			<textarea id = "nde" name = "bloco"></textarea>
+			<h2>Autônomo Deterministico Resultante:</h2>
+			<textarea id = "det" readonly></textarea>
+		</form>
+		<button id = "but" onclick = "return traduzir()" type = "submit">TRADUZIR</button>
 	</body>
 </html>
