@@ -32,7 +32,6 @@ function setup() {
 		"estadosFinais": undefined,
 		"delta": undefined
 	}
-	traduzir();
 }
 
 function traduzir() {
